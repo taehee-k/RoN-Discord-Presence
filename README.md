@@ -1,6 +1,10 @@
 # RoN Discord Presence 1.0.0
 
 Standalone client-side Discord presence for **Reign of Nether 1.4.4f**, Minecraft **1.20.1**, Java **17**, Forge **47.4.0+ within 47.x**. This release does not support the beta.
+Completely blackbox vibecoded and probably sucks ass.
+Meant for personal use. 
+
+
 
 ## Install
 
