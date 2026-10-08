@@ -1,0 +1,10 @@
+enabled = true
+applicationId = "1557642898630123560"
+showMenus = true
+showMap = true
+showFaction = true
+showGameType = true
+showPlayerNames = true
+showTimer = true
+showDaylight = false
+largeImage = "https://cdn.modrinth.com/data/FdbVHPk2/7cbaf56091f614a3d2d4df136a59c89fcda0b43c_96.webp"
