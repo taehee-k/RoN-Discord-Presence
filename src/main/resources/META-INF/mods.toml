@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="GPL-3.0-only"
+
+[[mods]]
+modId="ron_discord_presence"
+version="${file.jarVersion}"
+displayName="RoN Discord Presence"
+authors="RoN Presence contributors"
+displayTest="IGNORE_ALL_VERSION"
+description='''Standalone client-side Discord Rich Presence for Reign of Nether.'''
+
+[[dependencies.ron_discord_presence]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.0,48)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ron_discord_presence]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ron_discord_presence]]
+modId="reignofnether"
+mandatory=true
+versionRange="[1.5.0]"
+ordering="AFTER"
+side="CLIENT"
