@@ -27,6 +27,6 @@ side="BOTH"
 [[dependencies.ron_discord_presence]]
 modId="reignofnether"
 mandatory=true
-versionRange="[1.5.0a]"
+versionRange="[1.5.0b]"
 ordering="AFTER"
 side="CLIENT"

@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'dev.ronpresence'
-version = '1.5.0a'
+version = '1.5.0b'
 base.archivesName = 'ron-discord-presence'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -31,7 +31,7 @@ test {
     }
 }
 jar {
-    archiveClassifier = 'mc1.20.1-ron1.5.0a'
+    archiveClassifier = 'mc1.20.1-ron1.5.0b'
     manifest.attributes('Implementation-Version': project.version, 'MixinConfigs': 'ron_discord_presence.mixins.json')
     finalizedBy 'reobfJar'
 }

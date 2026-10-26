@@ -1,6 +1,6 @@
-# RoN Discord Presence 1.5.0a — compatible with RoN 1.5.0a
+# RoN Discord Presence 1.5.0b — compatible with RoN 1.5.0b
 
-Standalone client-side Discord presence for **Reign of Nether 1.5.0a**, Minecraft **1.20.1**, Java **17**, Forge **47.4.0+ within 47.x**. This release does not support the beta.
+Standalone client-side Discord presence for **Reign of Nether 1.5.0b**, Minecraft **1.20.1**, Java **17**, Forge **47.4.0+ within 47.x**. This release does not support the beta.
 
 Completely blackbox vibecoded and probably sucks ass.
 Meant for personal use.
@@ -8,11 +8,11 @@ Meant for personal use.
 ## Install
 
 1. Close Minecraft and remove your previous RoN presence add-on JAR from the instance's `mods` folder.
-2. Put `ron-discord-presence-1.5.0a-mc1.20.1-ron1.5.0a.jar` there alongside Reign of Nether 1.5.0a.
+2. Put `ron-discord-presence-1.5.0b-mc1.20.1-ron1.5.0b.jar` there alongside Reign of Nether 1.5.0b.
 3. Open Discord desktop, enable activity sharing, and launch Minecraft.
 
 Install only one presence add-on version. The mod ID is unchanged: `ron_discord_presence`.
-Version 1.5.0a updates compatibility to RoN 1.5.0a, retaining its registry-based faction API. Existing settings and display formatting are preserved.
+Version 1.5.0b updates compatibility to RoN 1.5.0b, retaining its registry-based faction API. Existing settings and display formatting are preserved.
 
 Application ID `1557642898630123560` is built in. No bot, token, GitHub repository, or additional Discord application setup is needed for this installation.
 The Discord activity's application title comes from that application, independently of the mod's display name.
@@ -88,9 +88,9 @@ The tested Windows connection fix and diagnostic logging are retained. Linux/mac
 With JDK 17:
 
 ```powershell
-.\gradlew.bat test build -PronReleaseJar=C:/path/to/reignofnether-1.5.0a.jar
+.\gradlew.bat test build -PronReleaseJar=C:/path/to/reignofnether-1.5.0b.jar
 ```
 
-On Linux/macOS use `sh gradlew`. Output is `build/libs/ron-discord-presence-1.5.0a-mc1.20.1-ron1.5.0a.jar`. The optional release-JAR property enables the actual-release compatibility test; without it that test skips. First builds require internet access for Gradle and Forge dependencies. Reign of Nether itself is not redistributed.
+On Linux/macOS use `sh gradlew`. Output is `build/libs/ron-discord-presence-1.5.0b-mc1.20.1-ron1.5.0b.jar`. The optional release-JAR property enables the actual-release compatibility test; without it that test skips. First builds require internet access for Gradle and Forge dependencies. Reign of Nether itself is not redistributed.
 
 Source is provided under GPL-3.0-only; see LICENSE.txt. This is an unofficial add-on. Reign of Nether and its project icon belong to their respective contributors. A GitHub repository is optional for operation and can be added later for public releases, issue tracking, and contributions.

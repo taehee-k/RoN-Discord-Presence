@@ -16,13 +16,13 @@ class ReleaseCompatibilityTest {
 
     private Path release() {
         String path = System.getProperty("ronReleaseJar");
-        assumeTrue(path != null, "Supply -PronReleaseJar=/path/to/reignofnether-1.5.0a.jar to run release checks");
+        assumeTrue(path != null, "Supply -PronReleaseJar=/path/to/reignofnether-1.5.0b.jar to run release checks");
         return Path.of(path);
     }
 
     @Test void allReflectedMembersExistInOfficialRelease() throws Exception {
         try (var jar = new JarFile(release().toFile())) {
-            assertEquals("1.5.0a", jar.getManifest().getMainAttributes().getValue("Implementation-Version"));
+            assertEquals("1.5.0b", jar.getManifest().getMainAttributes().getValue("Implementation-Version"));
             method(jar, "player/PlayerClientEvents", "getRTSPlayer", "()L" + ROOT + "player/RTSPlayer;");
             method(jar, "orthoview/OrthoviewClientEvents", "isEnabled", "()Z");
             method(jar, "tutorial/TutorialClientEvents", "isEnabled", "()Z");
